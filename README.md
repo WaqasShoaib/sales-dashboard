@@ -254,8 +254,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: WaqasShoaib(https://github.com/WaqasShoaib)
 
 ## 🙏 Acknowledgments
 
@@ -268,6 +267,15 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ **Star this repository if you found it helpful!**
 
+
+![image](https://github.com/user-attachments/assets/2796d229-fdce-4872-8f8c-ed487f661af8)
+
+![image](https://github.com/user-attachments/assets/842849b4-bc36-4b86-8ab7-129feac5b16a)
+
+![image](https://github.com/user-attachments/assets/28702ed8-c6c5-43bd-b591-81c04c6ed886)
+
+
+![image](https://github.com/user-attachments/assets/b6fefcc3-ef54-441c-ad05-8ccde091130b)
 
 
 
