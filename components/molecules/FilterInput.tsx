@@ -6,17 +6,22 @@ type Props = {
 };
 
 const FilterInput: React.FC<Props> = ({ threshold, setThreshold }) => (
-  <div className="mb-4 flex items-center gap-2">
-    <label>Show sales above:</label>
-    <Input
-      type="number"
-      value={threshold}
-      onChange={e => setThreshold(Number(e.target.value))}
-      min={0}
-      max={10000}
-      style={{ width: 100 }}
-    />
+  <div>
+    <h3 className="text-lg font-semibold text-gray-700 mb-3">Sales Filter</h3>
+    <div className="flex items-center gap-3">
+      <label className="text-sm font-medium text-gray-600">Show sales above:</label>
+      <Input
+        type="number"
+        value={threshold}
+        onChange={e => setThreshold(Number(e.target.value))}
+        min={0}
+        max={150000}
+        step={1000}
+        className="w-32"
+        placeholder="0"
+      />
+    </div>
   </div>
 );
 
-export default FilterInput;
+export default FilterInput; 
