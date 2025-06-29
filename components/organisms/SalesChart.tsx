@@ -18,6 +18,19 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+// TypeScript interface for Pie chart label props
+interface PieLabelProps {
+  cx?: number;
+  cy?: number;
+  midAngle?: number;
+  innerRadius?: number;
+  outerRadius?: number;
+  percent?: number;
+  index?: number;
+  month?: string;
+  sales?: number;
+}
+
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884D8", "#82CA9D"];
 
 const years = [2022, 2023, 2024];
@@ -64,7 +77,7 @@ const SalesChart = () => {
               <YAxis tickFormatter={formatCurrency} />
               <Tooltip 
                 formatter={(value: number) => [formatCurrency(value), 'Sales']}
-                labelFormatter={(label) => `Month: ${label}`}
+                labelFormatter={(label: string) => `Month: ${label}`}
               />
               <Legend />
               <Bar dataKey="sales" fill="#3B82F6" name="Monthly Sales" />
@@ -80,7 +93,7 @@ const SalesChart = () => {
               <YAxis tickFormatter={formatCurrency} />
               <Tooltip 
                 formatter={(value: number) => [formatCurrency(value), 'Sales']}
-                labelFormatter={(label) => `Month: ${label}`}
+                labelFormatter={(label: string) => `Month: ${label}`}
               />
               <Legend />
               <Line 
@@ -107,7 +120,7 @@ const SalesChart = () => {
                 cy="50%"
                 outerRadius={120}
                 fill="#8884d8"
-                label={(entry: any) => {
+                label={(entry: PieLabelProps) => {
                   const month = entry.month || 'Unknown';
                   const percent = entry.percent || 0;
                   return `${month}: ${(percent * 100).toFixed(1)}%`;
